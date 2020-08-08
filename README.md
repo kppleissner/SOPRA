@@ -60,8 +60,9 @@ if(.Platform$OS.type == "windows") {
 ```
 ***
 ### Data for testing  
-For testing you can use the data given in the folder ###Test-Data-4x96.  
-Furthermore, you can see the structure of describng files such as PlateList.txt or PlateConfLookUp.txt and the real data from 96-wells plates.
+For testing you can use the data given in the folder __Test-Data-4x96__.  
+In the folder __Test-Data-4x96/Files4x96/__ you can see the structure of describing files such as PlateList.txt or PlateConf_LookUp.txt and ScreenLog.txt.  
+In the folder __Test-Data-4x96/Infile/__ the measured data from 96-wells plates are given.
 
 ***
 ### Contact:   
