@@ -60,6 +60,7 @@ if(.Platform$OS.type == "windows") {
 ```
 ***
 ### Data for testing  
+For testing you can use the data given in the folder Test-Data-
 
 ***
 ### Contact:   
