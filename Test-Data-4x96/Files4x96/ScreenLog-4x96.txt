@@ -1,0 +1,175 @@
+Plate	Replicate	Well	WellNo	Flag	Comment	Barcode	Inducer
+1	1	K8	248	NA	no siRNA	Plate001_R1_W193-288_Main.txt	none
+1	1	K9	249	NA	no siRNA	Plate001_R1_W193-288_Main.txt	none
+1	2	K8	248	NA	no siRNA	Plate001_R2_W193-288_Main.txt	none
+1	2	K9	249	NA	no siRNA	Plate001_R2_W193-288_Main.txt	none
+1	3	K8	248	NA	no siRNA	Plate001_R3_W193-288_Main.txt	none
+1	3	K9	249	NA	no siRNA	Plate001_R3_W193-288_Main.txt	none
+1	4	K8	248	NA	no siRNA	Plate001_R4_W193-288_Main.txt	none
+1	4	K9	249	NA	no siRNA	Plate001_R4_W193-288_Main.txt	none
+2	1	O12	348	NA	no siRNA	Plate002_R1_W289-384_Main.txt	none
+2	1	O13	349	NA	no siRNA	Plate002_R1_W289-384_Main.txt	none
+2	2	O12	348	NA	no siRNA	Plate002_R2_W289-384_Main.txt	none
+2	2	O13	349	NA	no siRNA	Plate002_R2_W289-384_Main.txt	none
+2	3	O12	348	NA	no siRNA	Plate002_R3_W289-384_Main.txt	none
+2	3	O13	349	NA	no siRNA	Plate002_R3_W289-384_Main.txt	none
+2	4	O12	348	NA	no siRNA	Plate002_R4_W289-384_Main.txt	none
+2	4	O13	349	NA	no siRNA	Plate002_R4_W289-384_Main.txt	none
+1	1	B24	48	NA	lowCellNo	Plate001_R1_W1-96_Main.txt	none
+1	1	C6	54	NA	lowCellNo	Plate001_R1_W1-96_Main.txt	none
+1	1	C7	55	NA	lowCellNo	Plate001_R1_W1-96_Main.txt	none
+1	1	C8	56	NA	lowCellNo	Plate001_R1_W1-96_Main.txt	none
+1	1	C9	57	NA	lowCellNo	Plate001_R1_W1-96_Main.txt	none
+1	1	C24	72	NA	lowCellNo	Plate001_R1_W1-96_Main.txt	none
+1	1	D2	74	NA	lowCellNo	Plate001_R1_W1-96_Main.txt	none
+1	1	D3	75	NA	lowCellNo	Plate001_R1_W1-96_Main.txt	none
+1	1	D6	78	NA	lowCellNo	Plate001_R1_W1-96_Main.txt	none
+1	1	D7	79	NA	lowCellNo	Plate001_R1_W1-96_Main.txt	none
+1	1	D24	96	NA	lowCellNo	Plate001_R1_W1-96_Main.txt	none
+1	1	E2	98	NA	lowCellNo	Plate001_R1_W97-192_Main.txt	none
+1	1	E3	99	NA	lowCellNo	Plate001_R1_W97-192_Main.txt	none
+1	1	E24	120	NA	lowCellNo	Plate001_R1_W97-192_Main.txt	none
+1	1	F6	126	NA	lowCellNo	Plate001_R1_W97-192_Main.txt	none
+1	1	F7	127	NA	lowCellNo	Plate001_R1_W97-192_Main.txt	none
+1	1	F24	144	NA	lowCellNo	Plate001_R1_W97-192_Main.txt	none
+1	1	G24	168	NA	lowCellNo	Plate001_R1_W97-192_Main.txt	none
+1	1	J12	228	NA	lowCellNo	Plate001_R1_W193-288_Main.txt	none
+1	1	J13	229	NA	lowCellNo	Plate001_R1_W193-288_Main.txt	none
+1	1	K2	242	NA	lowCellNo	Plate001_R1_W193-288_Main.txt	none
+1	1	K3	243	NA	lowCellNo	Plate001_R1_W193-288_Main.txt	none
+1	1	M12	300	NA	lowCellNo	Plate001_R1_W289-384_Main.txt	none
+1	2	B6	30	NA	lowCellNo	Plate001_R2_W1-96_Main.txt	none
+1	2	B7	31	NA	lowCellNo	Plate001_R2_W1-96_Main.txt	none
+1	2	B24	48	NA	lowCellNo	Plate001_R2_W1-96_Main.txt	none
+1	2	C6	54	NA	lowCellNo	Plate001_R2_W1-96_Main.txt	none
+1	2	C7	55	NA	lowCellNo	Plate001_R2_W1-96_Main.txt	none
+1	2	C8	56	NA	lowCellNo	Plate001_R2_W1-96_Main.txt	none
+1	2	C9	57	NA	lowCellNo	Plate001_R2_W1-96_Main.txt	none
+1	2	C24	72	NA	lowCellNo	Plate001_R2_W1-96_Main.txt	none
+1	2	D2	74	NA	lowCellNo	Plate001_R2_W1-96_Main.txt	none
+1	2	D3	75	NA	lowCellNo	Plate001_R2_W1-96_Main.txt	none
+1	2	D6	78	NA	lowCellNo	Plate001_R2_W1-96_Main.txt	none
+1	2	D7	79	NA	lowCellNo	Plate001_R2_W1-96_Main.txt	none
+1	2	D8	80	NA	lowCellNo	Plate001_R2_W1-96_Main.txt	none
+1	2	D24	96	NA	lowCellNo	Plate001_R2_W1-96_Main.txt	none
+1	2	E2	98	NA	lowCellNo	Plate001_R2_W97-192_Main.txt	none
+1	2	E3	99	NA	lowCellNo	Plate001_R2_W97-192_Main.txt	none
+1	2	E24	120	NA	lowCellNo	Plate001_R2_W97-192_Main.txt	none
+1	2	F6	126	NA	lowCellNo	Plate001_R2_W97-192_Main.txt	none
+1	2	F7	127	NA	lowCellNo	Plate001_R2_W97-192_Main.txt	none
+1	2	F24	144	NA	lowCellNo	Plate001_R2_W97-192_Main.txt	none
+1	2	G24	168	NA	lowCellNo	Plate001_R2_W97-192_Main.txt	none
+1	2	J12	228	NA	lowCellNo	Plate001_R2_W193-288_Main.txt	none
+1	2	J13	229	NA	lowCellNo	Plate001_R2_W193-288_Main.txt	none
+1	2	K3	243	NA	lowCellNo	Plate001_R2_W193-288_Main.txt	none
+1	2	M12	300	NA	lowCellNo	Plate001_R2_W289-384_Main.txt	none
+1	2	M13	301	NA	lowCellNo	Plate001_R2_W289-384_Main.txt	none
+1	3	B24	48	NA	lowCellNo	Plate001_R3_W1-96_Main.txt	none
+1	3	C8	56	NA	lowCellNo	Plate001_R3_W1-96_Main.txt	none
+1	3	C9	57	NA	lowCellNo	Plate001_R3_W1-96_Main.txt	none
+1	3	C24	72	NA	lowCellNo	Plate001_R3_W1-96_Main.txt	none
+1	3	D2	74	NA	lowCellNo	Plate001_R3_W1-96_Main.txt	none
+1	3	D24	96	NA	lowCellNo	Plate001_R3_W1-96_Main.txt	none
+1	3	E2	98	NA	lowCellNo	Plate001_R3_W97-192_Main.txt	none
+1	3	E24	120	NA	lowCellNo	Plate001_R3_W97-192_Main.txt	none
+1	3	F6	126	NA	lowCellNo	Plate001_R3_W97-192_Main.txt	none
+1	3	F7	127	NA	lowCellNo	Plate001_R3_W97-192_Main.txt	none
+1	3	J12	228	NA	lowCellNo	Plate001_R3_W193-288_Main.txt	none
+1	3	J13	229	NA	lowCellNo	Plate001_R3_W193-288_Main.txt	none
+1	3	M12	300	NA	lowCellNo	Plate001_R3_W289-384_Main.txt	none
+1	3	M13	301	NA	lowCellNo	Plate001_R3_W289-384_Main.txt	none
+1	4	B6	30	NA	lowCellNo	Plate001_R4_W1-96_Main.txt	none
+1	4	B7	31	NA	lowCellNo	Plate001_R4_W1-96_Main.txt	none
+1	4	B24	48	NA	lowCellNo	Plate001_R4_W1-96_Main.txt	none
+1	4	C6	54	NA	lowCellNo	Plate001_R4_W1-96_Main.txt	none
+1	4	C7	55	NA	lowCellNo	Plate001_R4_W1-96_Main.txt	none
+1	4	C8	56	NA	lowCellNo	Plate001_R4_W1-96_Main.txt	none
+1	4	C9	57	NA	lowCellNo	Plate001_R4_W1-96_Main.txt	none
+1	4	C24	72	NA	lowCellNo	Plate001_R4_W1-96_Main.txt	none
+1	4	D2	74	NA	lowCellNo	Plate001_R4_W1-96_Main.txt	none
+1	4	D3	75	NA	lowCellNo	Plate001_R4_W1-96_Main.txt	none
+1	4	D6	78	NA	lowCellNo	Plate001_R4_W1-96_Main.txt	none
+1	4	D8	80	NA	lowCellNo	Plate001_R4_W1-96_Main.txt	none
+1	4	D9	81	NA	lowCellNo	Plate001_R4_W1-96_Main.txt	none
+1	4	D24	96	NA	lowCellNo	Plate001_R4_W1-96_Main.txt	none
+1	4	E2	98	NA	lowCellNo	Plate001_R4_W97-192_Main.txt	none
+1	4	E3	99	NA	lowCellNo	Plate001_R4_W97-192_Main.txt	none
+1	4	E24	120	NA	lowCellNo	Plate001_R4_W97-192_Main.txt	none
+1	4	F6	126	NA	lowCellNo	Plate001_R4_W97-192_Main.txt	none
+1	4	F7	127	NA	lowCellNo	Plate001_R4_W97-192_Main.txt	none
+1	4	F24	144	NA	lowCellNo	Plate001_R4_W97-192_Main.txt	none
+1	4	G24	168	NA	lowCellNo	Plate001_R4_W97-192_Main.txt	none
+1	4	J12	228	NA	lowCellNo	Plate001_R4_W193-288_Main.txt	none
+1	4	J13	229	NA	lowCellNo	Plate001_R4_W193-288_Main.txt	none
+1	4	K2	242	NA	lowCellNo	Plate001_R4_W193-288_Main.txt	none
+1	4	M12	300	NA	lowCellNo	Plate001_R4_W289-384_Main.txt	none
+1	4	M13	301	NA	lowCellNo	Plate001_R4_W289-384_Main.txt	none
+2	1	B24	48	NA	lowCellNo	Plate002_R1_W1-96_Main.txt	none
+2	1	C24	72	NA	lowCellNo	Plate002_R1_W1-96_Main.txt	none
+2	1	D24	96	NA	lowCellNo	Plate002_R1_W1-96_Main.txt	none
+2	1	E24	120	NA	lowCellNo	Plate002_R1_W97-192_Main.txt	none
+2	1	F12	132	NA	lowCellNo	Plate002_R1_W97-192_Main.txt	none
+2	1	F13	133	NA	lowCellNo	Plate002_R1_W97-192_Main.txt	none
+2	1	G24	168	NA	lowCellNo	Plate002_R1_W97-192_Main.txt	none
+2	1	H7	175	NA	lowCellNo	Plate002_R1_W97-192_Main.txt	none
+2	1	H12	180	NA	lowCellNo	Plate002_R1_W97-192_Main.txt	none
+2	1	H13	181	NA	lowCellNo	Plate002_R1_W97-192_Main.txt	none
+2	1	K12	252	NA	lowCellNo	Plate002_R1_W193-288_Main.txt	none
+2	1	K13	253	NA	lowCellNo	Plate002_R1_W193-288_Main.txt	none
+2	1	L12	276	NA	lowCellNo	Plate002_R1_W193-288_Main.txt	none
+2	1	L13	277	NA	lowCellNo	Plate002_R1_W193-288_Main.txt	none
+2	1	N8	320	NA	lowCellNo	Plate002_R1_W289-384_Main.txt	none
+2	1	N9	321	NA	lowCellNo	Plate002_R1_W289-384_Main.txt	none
+2	2	B24	48	NA	lowCellNo	Plate002_R2_W1-96_Main.txt	none
+2	2	C13	61	NA	lowCellNo	Plate002_R2_W1-96_Main.txt	none
+2	2	C24	72	NA	lowCellNo	Plate002_R2_W1-96_Main.txt	none
+2	2	D24	96	NA	lowCellNo	Plate002_R2_W1-96_Main.txt	none
+2	2	E24	120	NA	lowCellNo	Plate002_R2_W97-192_Main.txt	none
+2	2	F7	127	NA	lowCellNo	Plate002_R2_W97-192_Main.txt	none
+2	2	F12	132	NA	lowCellNo	Plate002_R2_W97-192_Main.txt	none
+2	2	F13	133	NA	lowCellNo	Plate002_R2_W97-192_Main.txt	none
+2	2	F24	144	NA	lowCellNo	Plate002_R2_W97-192_Main.txt	none
+2	2	G24	168	NA	lowCellNo	Plate002_R2_W97-192_Main.txt	none
+2	2	H7	175	NA	lowCellNo	Plate002_R2_W97-192_Main.txt	none
+2	2	H12	180	NA	lowCellNo	Plate002_R2_W97-192_Main.txt	none
+2	2	H13	181	NA	lowCellNo	Plate002_R2_W97-192_Main.txt	none
+2	2	K12	252	NA	lowCellNo	Plate002_R2_W193-288_Main.txt	none
+2	2	K13	253	NA	lowCellNo	Plate002_R2_W193-288_Main.txt	none
+2	2	L12	276	NA	lowCellNo	Plate002_R2_W193-288_Main.txt	none
+2	2	L13	277	NA	lowCellNo	Plate002_R2_W193-288_Main.txt	none
+2	2	N8	320	NA	lowCellNo	Plate002_R2_W289-384_Main.txt	none
+2	2	N9	321	NA	lowCellNo	Plate002_R2_W289-384_Main.txt	none
+2	3	B24	48	NA	lowCellNo	Plate002_R3_W1-96_Main.txt	none
+2	3	C24	72	NA	lowCellNo	Plate002_R3_W1-96_Main.txt	none
+2	3	D24	96	NA	lowCellNo	Plate002_R3_W1-96_Main.txt	none
+2	3	E24	120	NA	lowCellNo	Plate002_R3_W97-192_Main.txt	none
+2	3	F12	132	NA	lowCellNo	Plate002_R3_W97-192_Main.txt	none
+2	3	F13	133	NA	lowCellNo	Plate002_R3_W97-192_Main.txt	none
+2	3	F24	144	NA	lowCellNo	Plate002_R3_W97-192_Main.txt	none
+2	3	G24	168	NA	lowCellNo	Plate002_R3_W97-192_Main.txt	none
+2	3	H12	180	NA	lowCellNo	Plate002_R3_W97-192_Main.txt	none
+2	3	H13	181	NA	lowCellNo	Plate002_R3_W97-192_Main.txt	none
+2	3	L13	277	NA	lowCellNo	Plate002_R3_W193-288_Main.txt	none
+2	3	N8	320	NA	lowCellNo	Plate002_R3_W289-384_Main.txt	none
+2	3	N9	321	NA	lowCellNo	Plate002_R3_W289-384_Main.txt	none
+2	4	B24	48	NA	lowCellNo	Plate002_R4_W1-96_Main.txt	none
+2	4	C24	72	NA	lowCellNo	Plate002_R4_W1-96_Main.txt	none
+2	4	D24	96	NA	lowCellNo	Plate002_R4_W1-96_Main.txt	none
+2	4	E24	120	NA	lowCellNo	Plate002_R4_W97-192_Main.txt	none
+2	4	F12	132	NA	lowCellNo	Plate002_R4_W97-192_Main.txt	none
+2	4	F13	133	NA	lowCellNo	Plate002_R4_W97-192_Main.txt	none
+2	4	G24	168	NA	lowCellNo	Plate002_R4_W97-192_Main.txt	none
+2	4	H7	175	NA	lowCellNo	Plate002_R4_W97-192_Main.txt	none
+2	4	H12	180	NA	lowCellNo	Plate002_R4_W97-192_Main.txt	none
+2	4	H13	181	NA	lowCellNo	Plate002_R4_W97-192_Main.txt	none
+2	4	K12	252	NA	lowCellNo	Plate002_R4_W193-288_Main.txt	none
+2	4	K13	253	NA	lowCellNo	Plate002_R4_W193-288_Main.txt	none
+2	4	L12	276	NA	lowCellNo	Plate002_R4_W193-288_Main.txt	none
+2	4	L13	277	NA	lowCellNo	Plate002_R4_W193-288_Main.txt	none
+2	4	N8	320	NA	lowCellNo	Plate002_R4_W289-384_Main.txt	none
+2	4	N9	321	NA	lowCellNo	Plate002_R4_W289-384_Main.txt	none
+1	3	NA	40	NA	manually	Plate001_R3_W1-96_Main.txt	none
+1	3	NA	88	NA	manually	Plate001_R3_W1-96_Main.txt	none
+1	3	NA	136	NA	manually	Plate001_R3_W97-192_Main.txt	none
+1	3	NA	232	NA	manually	Plate001_R3_W193-288_Main.txt	none
+1	3	NA	280	NA	manually	Plate001_R3_W289-384_Main.txt	none

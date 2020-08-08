@@ -1,0 +1,17 @@
+Platename	WellRange	ObjectType	Filename	Plate	Replicate	Control	Feature	Filter1	Filter2	Filter3
+Plate001_R1	W1-96	Main	Plate001_R1_W1-96_Main.txt	1	1	NeutralControl1	Area	G_Nuclei4E75636C6569	G_Area41726561	NA
+Plate001_R1	W97-192	Main	Plate001_R1_W97-192_Main.txt	1	1	NeutralControl1	Area	G_Nuclei4E75636C6569	G_Area41726562	NA
+Plate001_R1	W193-288	Main	Plate001_R1_W193-288_Main.txt	1	1	NeutralControl1	Area	G_Nuclei4E75636C6569	G_Area41726563	NA
+Plate001_R1	W289-384	Main	Plate001_R1_W289-384_Main.txt	1	1	NeutralControl1	Area	G_Nuclei4E75636C6569	G_Area41726564	NA
+Plate001_R2	W1-96	Main	Plate001_R2_W1-96_Main.txt	1	2	NeutralControl1	Area	G_Nuclei4E75636C6569	G_Area41726565	NA
+Plate001_R2	W97-192	Main	Plate001_R2_W97-192_Main.txt	1	2	NeutralControl1	Area	G_Nuclei4E75636C6569	G_Area41726566	NA
+Plate001_R2	W193-288	Main	Plate001_R2_W193-288_Main.txt	1	2	NeutralControl1	Area	G_Nuclei4E75636C6569	G_Area41726567	NA
+Plate001_R2	W289-384	Main	Plate001_R2_W289-384_Main.txt	1	2	NeutralControl1	Area	G_Nuclei4E75636C6569	G_Area41726568	NA
+Plate002_R1	W1-96	Main	Plate002_R1_W1-96_Main.txt	2	1	NeutralControl1	Area	G_Nuclei4E75636C6569	G_Area41726561	NA
+Plate002_R1	W97-192	Main	Plate002_R1_W97-192_Main.txt	2	1	NeutralControl1	Area	G_Nuclei4E75636C6569	G_Area41726562	NA
+Plate002_R1	W193-288	Main	Plate002_R1_W193-288_Main.txt	2	1	NeutralControl1	Area	G_Nuclei4E75636C6569	G_Area41726563	NA
+Plate002_R1	W289-384	Main	Plate002_R1_W289-384_Main.txt	2	1	NeutralControl1	Area	G_Nuclei4E75636C6569	G_Area41726564	NA
+Plate002_R2	W1-96	Main	Plate002_R2_W1-96_Main.txt	2	2	NeutralControl1	Area	G_Nuclei4E75636C6569	G_Area41726565	NA
+Plate002_R2	W97-192	Main	Plate002_R2_W97-192_Main.txt	2	2	NeutralControl1	Area	G_Nuclei4E75636C6569	G_Area41726566	NA
+Plate002_R2	W193-288	Main	Plate002_R2_W193-288_Main.txt	2	2	NeutralControl1	Area	G_Nuclei4E75636C6569	G_Area41726567	NA
+Plate002_R2	W289-384	Main	Plate002_R2_W289-384_Main.txt	2	2	NeutralControl1	Area	G_Nuclei4E75636C6569	G_Area41726568	NA
