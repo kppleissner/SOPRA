@@ -240,7 +240,7 @@ ui <- fluidPage(
            selectInput("number_of_wells", 
                        label = tags$h5(strong(span("Wells_per_plate (have to match to selected PlateList)"))), 
                        choices = c(384, 96),
-                       selected = 384)),
+                       selected = 96)),
     
     column(3,
            sliderInput("left.quantile", "Left Quantile", 
