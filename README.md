@@ -49,11 +49,11 @@ If you have Windows OS and drive A: is the first drive exlude it in **server.R**
 
 if(.Platform$OS.type == "windows") {  
     
-    volumes <- system("wmic logicaldisk get name", intern = T)  
-    volumes <- sub(" *\\r$", "", volumes)  
-    keep <- !tolower(volumes) %in% c("name", "")  
-    volumes <- volumes[keep]  
-    volumes <- volumes[-1]  #  exclusion of volume A: in windows  
+    volumes <- system("wmic logicaldisk get name", intern = T)
+    volumes <- sub(" *\\r$", "", volumes)
+    keep <- !tolower(volumes) %in% c("name", "")
+    volumes <- volumes[keep]
+  #  volumes <- volumes[-1]  #  exclusion of volume A: in windows,i.e. uncomment this line
     names(volumes) <- volumes  
     
 }
