@@ -53,7 +53,7 @@ if(.Platform$OS.type == "windows") {
     volumes <- sub(" *\\r$", "", volumes)
     keep <- !tolower(volumes) %in% c("name", "")
     volumes <- volumes[keep]
-  #  volumes <- volumes[-1]  #  exclusion of volume A: in Windows OS,i.e. uncomment this line
+  #  volumes <- volumes[-1]  #  exclusion of volume A: in Windows OS, i.e. uncomment this line
     names(volumes) <- volumes  
     
 }
