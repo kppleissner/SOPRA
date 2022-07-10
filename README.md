@@ -42,7 +42,7 @@ _**Please read the project description in the Manual folder of the SOPRA  projec
 
 ### Software modification for Windows OS   
 If you have Windows OS and drive A: is the first drive exlude it in **server.R** following way:    
-
+If you have Windows OS and drive A: and drive C:  are the first and second drives,  exlude it in **server.R** following way: 
 ```{r}
   server <-  function(input, output, session) { 
 
