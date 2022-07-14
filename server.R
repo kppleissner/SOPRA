@@ -28,16 +28,14 @@ options(error = expression(NULL))
 server <-  function(input, output, session) { 
 
 
-  if(.Platform$OS.type == "windows") {
-    
+  if(.Platform$OS.type == "windows") {      
     volumes <- system("wmic logicaldisk get name", intern = T)
     volumes <- sub(" *\\r$", "", volumes)
     keep <- !tolower(volumes) %in% c("name", "")
     volumes <- volumes[keep]
-  #  volumes <- volumes[-1]  #  exclusion of volume A: in Windows OS,  i.e. uncomment this line
-    names(volumes) <- volumes
-    
-
+  #  volumes <- volumes[-1]  #  exclusion of one volume (for instance A): in Windows OS, i.e. uncomment this line
+  #  volumes <- volumes[-1:-2]  #  exclusion of two volumes (for instance  A: and C:)  in Windows OS, i.e. uncomment this line
+    names(volumes) <- volumes  
   }
   
   if(.Platform$OS.type == "unix") {
