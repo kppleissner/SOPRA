@@ -66,7 +66,9 @@ See following code:
 ***
 ### Data for testing  
 For testing you can use the data given in the folder __Test-Data-4x96__.  
-In the folder __Test-Data-4x96/Files4x96/__ you can see the structure of describing files such as PlateList-Area-4x96.txt or PlateConf_LookUp.txt and ScreenLog-4x96.txt.  
+In the folder __Test-Data-4x96/Files4x96/__ you can see the structure of describing files such as __PlateList-Area-4x96.txt__ or __PlateConf_LookUp.txt__ and __ScreenLog-4x96.txt__.   
+The plate list file __PlateList-Area-4x96.txt__ contains 2 plates with 2 replicates for each plate.   
+The plate configuration file __PlateConf_LookUp.txt__ describes the plate configuration, for instance GeneSymbols, well annotation and well content (sample wells, control wells, Outerwell etc.).   
 In the folder __Test-Data-4x96/InData4x96/__ the measured data from 96-wells plates are given.
 
 ***
