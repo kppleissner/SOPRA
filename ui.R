@@ -9,44 +9,6 @@
 # -- Libraries. 
 #
 
-if(F){ 
-
-
-  
-  # Install necessary packages
-  
-  packages <- c("shiny", "shinyFiles", "RColorBrewer", "NLP", 
-                "data.table", "mclust", "wordcloud", "tm", "fs")
-
-  if(length(setdiff(packages, rownames(installed.packages()))) > 0) {
-    install.packages(setdiff(packages, rownames(installed.packages())))
-  } 
-
-  
-
-  # install maSigPro
-  
-  if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-  BiocManager::install("maSigPro")
-  
-  
-
-
-
-
-library(shiny)
-library(shinyFiles)
-library(RColorBrewer)
-library(NLP)
-library(data.table)
-library(maSigPro)
-library(mclust)
-library(wordcloud)
-library(tm)
-library(fs)
-
-} #end IF
 
 
 
@@ -56,7 +18,10 @@ library(fs)
 # Packages "magrittr","tidyverse","tidyr", are necessary for pipe operator 
 
 packages <- c("magrittr","tidyverse","tidyr",
-              "shiny", "shinyFiles", "RColorBrewer", "NLP", "data.table", "mclust", "wordcloud", "tm", "fs", "maSigPro")
+              "shiny", "shinyFiles","RColorBrewer",
+              "NLP", "data.table", "mclust", 
+              "wordcloud", "tm", "fs",
+              "BiocManager")
 
 
 # Install packages not yet installed
@@ -65,7 +30,13 @@ if (any(installed_packages == FALSE)) {
   install.packages(packages[!installed_packages])
 }
 
+# install maSigPro
+BiocManager::install("maSigPro")
+
+
 # Packages loading
+library(shinyFiles)
+library(maSigPro)
 library(magrittr)
 lapply(packages, library, character.only = TRUE) %>% invisible()
 
