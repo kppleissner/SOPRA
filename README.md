@@ -40,23 +40,27 @@ _**Please read the project description in the Manual folder of the SOPRA  projec
 
 ***
 
-### Software modification for Windows OS   
-If you have Windows OS and drive A: is the first drive exlude it in **server.R** following way:    
-If you have Windows OS and drive A: and drive C:  are the first and second drives,  exlude it in **server.R** following way: 
+### Different operating systems  
+The software was tested for Windows OS, Linux and MAC OS.
+Especially, the function getVolumes() in the server-side file system viewer for Shiny (package: shinyFiles - https://cran.r-project.org/web/packages/shinyFiles/shinyFiles.pdf) is used to access the OS specific volumes/drives.
+In Windows getVolumes()() returns all drives mapped to a letter.
+Mac OSX looks in /Volumes/ and lists the directories therein.
+In Linux getVolumes()() returns the system root.  
+If the function does not recognize the system under which it is running it will throw an error.   
+See following code:
+
 ```{r}
   server <-  function(input, output, session) { 
 
+   volumes <- c(getVolumes()())
 
-if(.Platform$OS.type == "windows") {  
-    
-    volumes <- system("wmic logicaldisk get name", intern = T)
-    volumes <- sub(" *\\r$", "", volumes)
-    keep <- !tolower(volumes) %in% c("name", "")
-    volumes <- volumes[keep]
-  #  volumes <- volumes[-1]  #  exclusion of one volume (for instance A): in Windows OS, i.e. uncomment this line
-  #  volumes <- volumes[-1:-2]  #  exclusion of two volumes (for instance  A: and C:)  in Windows OS, i.e. uncomment this line
-    names(volumes) <- volumes  
-    
+  # use shinyFile functions
+  shinyFileChoose(input, "PlateLi", roots = volumes, session = session)
+  shinyDirChoose(input, "outdirectory", roots = volumes, session = session, restrictions = system.file(package = "base"))
+...
+...
+...
+
 }
 ```
 ***
