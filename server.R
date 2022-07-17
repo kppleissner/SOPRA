@@ -1,5 +1,5 @@
 # SOPRA
-# server.R V.0.15 last edited by KPP: 2020/07
+# server.R V.0.15 last edited by KPP: 2022/07
 
 # The software has been implemented in R http://www.r-project.org.
 # Software License:
@@ -26,24 +26,9 @@ options(error = expression(NULL))
 # --- Start Server:
 
 server <-  function(input, output, session) { 
-
-
-  if(.Platform$OS.type == "windows") {      
-    volumes <- system("wmic logicaldisk get name", intern = T)
-    volumes <- sub(" *\\r$", "", volumes)
-    keep <- !tolower(volumes) %in% c("name", "")
-    volumes <- volumes[keep]
-  #  volumes <- volumes[-1]  #  exclusion of one volume (for instance A): in Windows OS, i.e. uncomment this line
-  #  volumes <- volumes[-1:-2]  #  exclusion of two volumes (for instance  A: and C:)  in Windows OS, i.e. uncomment this line
-    names(volumes) <- volumes  
-  }
   
-  if(.Platform$OS.type == "unix") {
-    volumes <- getVolumes() }
-    
- 
+  volumes <- c(getVolumes()()) #The function is valid for Windows OS, Linux and MAC OS specific and looks for volumes/drives 
   
-
   # use shinyFile functions
   shinyFileChoose(input, "PlateLi", roots = volumes, session = session)
   shinyFileChoose(input, "PlateCon", roots = volumes, session = session)
@@ -135,7 +120,7 @@ server <-  function(input, output, session) {
       title = "Software version info.",
       "Single Object Profiles Regression Analysis with interactive selection of folders, files, order of processing,
        parameters of significance, clusters etc. using packages as shiny, shinyFiles, maSigPro, data.table, wordcloud, Mclust, fs etc.
-      version 0.15      Last edit: by Klaus-P. Pleissner- July 2020"
+      version 0.15      Last edit: by Klaus-P. Pleissner- July 2022"
     ))
   })
   
