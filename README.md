@@ -46,8 +46,17 @@ Especially, the function getVolumes() in the server-side file system viewer for 
 In Windows getVolumes()() returns all drives mapped to a letter.
 Mac OSX looks in /Volumes/ and lists the directories therein.
 In Linux getVolumes()() returns the system root.  
-If the function does not recognize the system under which it is running it will throw an error.   
-See following code:
+If the function does not recognize the system under which it is running it will throw an error.  
+
+__Recommendations:__     
+If error occurs then install the most recent github version via remotes:   
+
+remotes::install_github("thomasp85/shinyFiles")
+
+Check also,  if __shinyFiles::shinyFilesExample()__ works on your system !
+
+
+See following code as example:
 
 ```{r}
   server <-  function(input, output, session) { 
@@ -62,6 +71,9 @@ See following code:
 ...
 
 }
+
+
+
 ```
 ***
 ### Data for testing  
