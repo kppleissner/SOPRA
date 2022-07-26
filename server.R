@@ -40,13 +40,13 @@ server <-  function(input, output, session) {
   ########## Selection of Directories ########################
   
   observe({
-    cat("\ninput$indirectory value:\n\n")
+ #   cat("\ninput$indirectory value:\n\n")
     assign("InputFolderName", parseDirPath(volumes, input$indirectory), pos=".GlobalEnv")
     print(input$indirectory)
   })
   
   observe({
-    cat("\ninput$outdirectory value:\n\n")
+   # cat("\ninput$outdirectory value:\n\n")
     assign("OutputFolderName",  parseDirPath(volumes, input$outdirectory), pos=".GlobalEnv")
     print(input$outdirectory)
   })
@@ -63,8 +63,7 @@ server <-  function(input, output, session) {
   
   ############# Platelist ###################
   observe({
-   
-    cat("\ninput$PlateLi value:\n\n")
+   # cat("\ninput$PlateLi value:\n\n")
     print(input$PlateLi)
   })
   
@@ -77,7 +76,7 @@ server <-  function(input, output, session) {
   ######### PlateConfLookUp ################### 
   
   observe({
-    cat("\ninput$PlateCon value:\n\n")
+   # cat("\ninput$PlateCon value:\n\n")
     print(input$PlateCon)
   })
   
@@ -91,9 +90,8 @@ server <-  function(input, output, session) {
   ######### ScreenLog ################### 
   
   observe({
-    cat("\ninput$ScreenLo value:\n\n")
+  #  cat("\ninput$ScreenLo value:\n\n")
     print(input$ScreenLo)
-    
   })
   
   ## print to browser
@@ -118,9 +116,9 @@ server <-  function(input, output, session) {
   observeEvent(input$showversioninfo, {
     showModal(modalDialog(
       title = "Software version info.",
-      "Single Object Profiles Regression Analysis with interactive selection of folders, files, order of processing,
-       parameters of significance, clusters etc. using packages as shiny, shinyFiles, maSigPro, data.table, wordcloud, Mclust, fs etc.
-      version 0.15      Last edit: by Klaus-P. Pleissner- July 2022"
+      HTML("Single Object Profiles Regression Analysis with interactive selection of folders, files, order of processing,
+       parameters of significance, clusters etc. using packages as shiny, shinyFiles, maSigPro, data.table, wordcloud, Mclust, fs etc.<br>
+      version 0.15    <br>  Last edit: by Klaus-P. Pleissner- July 26th, 2022")
     ))
   })
   
@@ -131,9 +129,9 @@ server <-  function(input, output, session) {
   observeEvent(input$show1of4info, {
     showModal(modalDialog(
       title = "SOPRA 1of4 info.",
-      "SOPRA 1 of 4 performs a preprocessing step, in which all features of the
-      indicated wells are flagged by NA. The specified wells are listed in the manually-created
-      'ScreenLog' file"
+     HTML( "SOPRA 1 of 4 performs a preprocessing step, in which all features of the
+      indicated wells are flagged by NA. <br>The specified wells are listed in the manually-created
+      'ScreenLog' file")
     ))
   })
   
@@ -141,16 +139,16 @@ server <-  function(input, output, session) {
   observeEvent(input$show2of4info, {
     showModal(modalDialog(
       title = "SOPRA 2of4 info.",
-      "SOPRA 2 of 4 performs data gathering and normalization by collecting all data according to a given PlateList,
+      HTML("SOPRA 2 of 4 performs data gathering and normalization by collecting all data according to a given PlateList,
       annotates the objects (single cells) by a PlateConfiguration file, calculates a common discrete interval (bin) axis for all probability
       distribution profiles (histograms) of a selected feature, performs a median-of-
       control normalization per plate for raw data (plate-wise) and a median-of-control normalization of histograms per bin (called: bin-wise). 
-      Subsequently, the density distribution (histogram) of a selected feature (test distribution) is divided
-      by the distribution (histogram) of that selected feature for control wells (reference distribution) in a bin-wise manner. 
+      <br>Subsequently, the density distribution (histogram) of a selected feature (test distribution) is divided
+      by the distribution (histogram) of that selected feature for control wells (reference distribution) in a bin-wise manner.<br> 
       Taking the logarithm of the ratio test/reference one gets a zero-profile if the test distribution equals the reference
-      distribution. The larger the deviation from the reference distribution the more likely the test distribution would be statistically significant. 
-      Finally, an AllDataTable.txt-file containing all normalized and annotated data is generated. This AllDataTable.txt-file serves as input for the determination 
-      of statistically significant different histogram profiles using the R-package maSigPro"
+      distribution. <br> The larger the deviation from the reference distribution the more likely the test distribution would be statistically significant. 
+      <br>Finally, an AllDataTable.txt-file containing all normalized and annotated data is generated. This AllDataTable.txt-file serves as input for the determination 
+      of statistically significant different histogram profiles using the R-package maSigPro")
     ))
   })
   
@@ -158,22 +156,22 @@ server <-  function(input, output, session) {
   observeEvent(input$show3of4info, {
     showModal(modalDialog(
       title = "SOPRA 3of4 info.",
-      "SOPRA 3 of 4  finds and clusters statistically significant different density profiles (histograms) of median-of-control normalized (bin-wise)
-      feature of siRNAs using the R-package  maSigPro (microarray Significant Profiles).
+     HTML( "SOPRA 3 of 4  finds and clusters statistically significant different density profiles (histograms) of median-of-control normalized (bin-wise)
+      feature of siRNAs using the R-package  maSigPro (microarray Significant Profiles).<br>
       maSigPro is a 2-step regression-based method for the analysis of single and multiple time series microarray experiments.
-      The first step is a gene selection step that applies the least-square technique to estimate the parameters of regression models
+      <br>The first step is a gene selection step that applies the least-square technique to estimate the parameters of regression models
       and to calculate the variance  for each gene. The p-value associated with F statistics for each gene is used to select 
       significant genes. The p-value is corrected for the multiple comparisons using Benjamini & Hochberg, a false discovery rate method.
-      The second step is a variable selection step that applies the stepwise regression approach to identify statistically 
+     <br> The second step is a variable selection step that applies the stepwise regression approach to identify statistically 
       significant profiles based on the R-square-value of the second regression model between the experimental groups.
-      This package comprises five functions:
+      <br>This package comprises five functions:
       
       make.design.matrix();  p.vector(); T.fit(); get.siggenes(); see.genes().
       
-      Please note, that hclust-method for clustering should not apply if data have been preprocessed. 
-      Preprocessing introduces NAs which leads to an error in hclust!! 
+      <br>Please note, that hclust-method for clustering should not apply if data have been preprocessed. 
+      <br>Preprocessing introduces NAs which leads to an error in hclust!! 
       
-      For further details see the documentation of maSigPro (https://bioconductor.org/packages/release/bioc/html/maSigPro.html)"
+     <br> For further details see the documentation of maSigPro (https://bioconductor.org/packages/release/bioc/html/maSigPro.html)")
     ))
   })
   
@@ -189,10 +187,11 @@ server <-  function(input, output, session) {
   # - Read ScreenLog.
   ScreenLog  <- reactive({
     inFile <- parseFilePaths(volumes, input$ScreenLo)$datapath
- 
-    if (is.null(inFile))
-      return(NULL)
+    if(is.null(inFile)) {return(NULL)}
+    else{
     return(read.table(inFile, header= TRUE,row.names = NULL, sep="\t",quote = "",stringsAsFactors=F))
+    }
+    
   })
   
   
@@ -200,17 +199,19 @@ server <-  function(input, output, session) {
   # - Read PlateList.
   PlateList  <- reactive({
     inFile2 <- parseFilePaths(volumes, input$PlateLi)$datapath
-    if (is.null(inFile2))
-      return(NULL)
+    if (is.null(inFile2)){return(NULL)}
+    else{
     return(read.table(inFile2, header= TRUE,row.names = NULL, sep="\t",quote = "",stringsAsFactors=F))
+    }
   }) 
   
   # - Read PlateConfLookUp.
   PlateConfLookUp  <- reactive({
     inFile3 <- parseFilePaths(volumes, input$PlateCon)$datapath
-    if (is.null(inFile3))
-      return(NULL)
+    if (is.null(inFile3)){ return(NULL) }
+    else{
     return(read.table(inFile3, header= TRUE,row.names = NULL, sep="\t",quote = "",stringsAsFactors=F))
+    }
   }) 
   
 
@@ -218,7 +219,15 @@ server <-  function(input, output, session) {
   
   observeEvent(input$GO,{
     
-    # --- This is SOPRA1of4:
+   
+
+    ## Measurement of running time  is obsolete ##
+    #
+    # start_time <- Sys.time()
+    #
+    
+#############################################################################    
+    # --- This is SOPRA 1 of 4:
     
     if(input$preprocess=="TRUE") {
       
@@ -229,20 +238,9 @@ server <-  function(input, output, session) {
       sl = ScreenLog() # Read ScreenLog file.
       pl = PlateList()  # Read Platelist file. 
       
-      # - Check input data.
-      check=function(x) tryCatch(if(class(x) == 'logical') 1 else 1, error=function(e) 0) 
+     
       
-      if(length(sl)>0){
-        checksl<-1
-      }else{checksl<-0}
-      
-      if(length(pl)>0){
-        checkpl<-1
-      }else{checkpl<-0}
-      
-      checkfilesum=check(InputFolderName)+check(OutputFolderName)+checksl+checkpl
-      
-      if (checkfilesum==4){
+  
         
         # -- Set Path.
         
@@ -256,7 +254,7 @@ server <-  function(input, output, session) {
         # -- Determine plate names. 
         
         pnames = as.character(unique(pl$Filename))
-        cat("\n\nData files to be preprocessed: \n")
+        cat("\n\nData files to be preprocessed: \n\n")
         
         for(i in seq(along=pnames)){
           cat(pnames[i],"\n")
@@ -313,11 +311,7 @@ server <-  function(input, output, session) {
         cat("\n\nEnd: SOPRA 1 of 4")
         
         
-      }else{ # Check files
-        
-        cat("\n OH NO.!!! SOPRA1of4 stopped. Insufficient input files or folders.")
-        
-      } #End of check files
+      
       
     }else{  
       
@@ -338,9 +332,9 @@ server <-  function(input, output, session) {
       Path_to_Input_Data  <<- InputFolderName  
       
       
-    } # --- End of SOPRA1of4.
+    } # --- End of SOPRA 1 of 4.
     
-    # --- This is SOPRA2of4:
+    # --- This is SOPRA 2 of 4:
     
     if(input$dataprocess=="TRUE") {
       
@@ -450,7 +444,7 @@ server <-  function(input, output, session) {
       # -- Start Main Loop:
       
       progresswert = 1/TNopl
-      withProgress(message = 'SOPRA 2 of 4.Processing ', value = 0, { # Progress bar
+      withProgress(message = 'SOPRA 2 of 4. Processing ', value = 0, { # Progress bar
         
         for( l in 1:TNopl ){ # - Main-loop. # Total No of plates (TNopl)
           
@@ -1699,6 +1693,8 @@ server <-  function(input, output, session) {
       
       cat("\n Done: Clustering Export")
       dev.off()
+   
+      
       #######################################################################      
       
       #output of table of sig. siRNAs using renderTable 
@@ -1837,21 +1833,46 @@ server <-  function(input, output, session) {
       } # End of Check if filename already exists
       
       
-    } # end if(input$dataanalysis == "TRUE")
- 
+    } # end of SOPRA 4 of 4. 
+      #  SOPRA 4 of 4 is always running together with SOPRA3 of 4
+    
+
+    
+ ######################################################   
   
     showModal(modalDialog(
       title = "Analysis finished.",
-      "...the current analysis has been finished. You can find all resulting files in the selected output folder you have chosen.  
-      You can end the script or choose different conditions to re-run the analysis.
-      Please note: For setting different parameters in the SOPRA 3 of 4 you have to uncheck SOPRA 1 of 4 and SOPRA 2 of 4. Otherwise the analysis re-runs from the very beginning!! "
+      HTML("The current analysis has been finished. You can find all resulting files in the selected output folder you have chosen.  
+      You can end the script or choose different conditions to re-run the analysis.<br>   
+      Please note : <br> 
+      For setting different parameters in the SOPRA 3 of 4 step  you have to uncheck SOPRA 1 of 4 and SOPRA 2 of 4.<br>
+      Otherwise the analysis re-runs from the very beginning!! ")
     ))
     
     
     
-  }
+    
+    
+    
+    ### measurement  of time elapsed and processing time per plate  is obsolete #######
+   
+   #end_time <- Sys.time()
+   #cat("\n\n=== Total time elapsed ===\n")
+   #print(end_time - start_time)
+   #cat("\nProcessing time per plate = ", (end_time - start_time)/TNopl, "mins." )  
+   
+    ##################################################################
+    
+    
+    
+      } # end of observe event
+ 
+ 
+ 
     )  # --- END GO Button. 
-  
+
+ 
+    
   #--- STOP:
   observeEvent(
     input$STOP,{ stopApp(returnValue = invisible())
