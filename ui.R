@@ -1,5 +1,5 @@
 # SOPRA 
-# ui.R  V.0.14 last edited by KPP: 2019/12/06
+# ui.R  V.0.15 last edited by KPP: 2022/07/26
 
 # The software has been implemented in R http://www.r-project.org.
 # Software License:
@@ -153,7 +153,9 @@ ui <- fluidPage(
              p(br(), strong(span("SOPRA 1 of 4: Preprocessing and well flagging", style="color:darkblue"))))
   ),
   inputPanel(
-    checkboxInput(inputId ="preprocess",label = "Check if you want to preprocess data", value = FALSE)
+    checkboxInput(inputId ="preprocess",
+                  label = "Check if you want to preprocess data",
+                  value = FALSE)
   ),
   
   
@@ -198,7 +200,9 @@ ui <- fluidPage(
   # -- Input Sopra 2of4.
   
   inputPanel(
-    checkboxInput(inputId="normalize.plate", label = "Check if you want to median-normalize each plate?", value = TRUE)
+    checkboxInput(inputId="normalize.plate", 
+                  label = "Check if you want to median-normalize each plate?",
+                  value = TRUE)
   ),
   
   fluidRow(
