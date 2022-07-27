@@ -1846,7 +1846,7 @@ server <-  function(input, output, session) {
       HTML("The current analysis has been finished. You can find all resulting files in the selected output folder you have chosen.  
       You can end the script or choose different conditions to re-run the analysis.<br>   
       Please note : <br> 
-      For setting different papameters in the SOPRA 2 of 4 step you have to uncheck SOPRA 1 of 4. <br>
+      For setting different parameters in the SOPRA 2 of 4 step you have to uncheck SOPRA 1 of 4. <br>
       For setting different parameters in the SOPRA 3 of 4 step you have to uncheck SOPRA 1 of 4 and SOPRA 2 of 4.<br>
       Otherwise the analysis re-runs from the very beginning!! ")
     ))
