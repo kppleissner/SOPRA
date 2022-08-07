@@ -140,9 +140,8 @@ server <-  function(input, output, session) {
     showModal(modalDialog(
       title = "SOPRA 2of4 info.",
       HTML("SOPRA 2 of 4 performs data gathering and normalization by collecting all data according to a given PlateList,
-      annotates the objects (single cells) by a PlateConfiguration file, calculates a common discrete interval (bin) axis for all probability
-      distribution profiles (histograms) of a selected feature, performs a median-of-
-      control normalization per plate for raw data (plate-wise) and a median-of-control normalization of histograms per bin (called: bin-wise). 
+      annotates the objects (single cells) by a PlateConfiguration file, calculates a common discrete interval (bin) axis for all frequency
+      distribution profiles (histograms) of a selected feature, performs a median normalization per plate for raw data (plate-wise) and a median-of-control normalization of histograms per bin (called: bin-wise). 
       <br>Subsequently, the density distribution (histogram) of a selected feature (test distribution) is divided
       by the distribution (histogram) of that selected feature for control wells (reference distribution) in a bin-wise manner.<br> 
       Taking the logarithm of the ratio test/reference one gets a zero-profile if the test distribution equals the reference
