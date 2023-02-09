@@ -82,7 +82,7 @@ In the folder __Test-Data-4x96/Files4x96/__ you can see the structure of describ
 The plate list file __PlateList-Area-4x96.txt__ contains 2 plates with 2 replicates for each plate.   
 The plate configuration file __PlateConf_LookUp.txt__ describes the plate configuration, for instance GeneSymbols, well annotation and well content (sample wells, control wells, Outerwell etc.).   
 In the folder __Test-Data-4x96/InData4x96/__ the measured data from 96-wells plates are given.      
-Furthermore, you can also find data of high-throughput RNAi screen for cell cycle progression with 384-well plates under following [link] ( https://doi.org/10.17617/3.V78OA4)
+Furthermore, you can also find data of high-throughput RNAi screen for cell cycle progression with 384-well plates under following link ( https://doi.org/10.17617/3.V78OA4)
 
 ***
 ### Contact:   
